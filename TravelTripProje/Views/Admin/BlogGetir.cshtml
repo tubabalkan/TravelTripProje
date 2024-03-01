@@ -9,7 +9,7 @@
 @using (Html.BeginForm("BlogGuncelle", "Admin", FormMethod.Post))
 {
     @Html.LabelFor(x => x.ID)
-    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly="readonly"})
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
     <br />
     @Html.LabelFor(x => x.Baslik)
     @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
@@ -21,7 +21,8 @@
     @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" })
     <br />
     @Html.LabelFor(x => x.Aciklama)
-    @Html.TextAreaFor(x => x.Aciklama,15,1, new { @class = "form-control" })
+    <a href="~/Views/Admin/BlogGetir.cshtml">~/Views/Admin/BlogGetir.cshtml</a>
+    @Html.TextAreaFor(x => x.Aciklama, 15, 1, new { @class = "form-control" })
     <br />
     <button class="btn btn-success">Blog Güncelle</button>
 }
